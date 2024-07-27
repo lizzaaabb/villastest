@@ -2,6 +2,7 @@ html, body {
     height: 100%; /* Ensure html and body take full viewport height */
     margin: 0; /* Remove default margins */
     padding: 0; /* Remove default padding */
+    overflow-x: hidden;
 }
 html{
     scroll-behavior: smooth;
@@ -14,8 +15,15 @@ body{
 }
 
 .navbar{
-    margin-bottom: 5%;
-}
+    top: 0; /* Aligns the navbar to the top of the viewport */
+    left: 0; /* Aligns the navbar to the left of the viewport */
+    z-index: 1000; 
+    width: 100%;
+    overflow-x: hidden;
+    box-sizing: border-box !important;
+    overflow-x: hidden;
+    position: sticky; /* Fixes the navbar in place */
+} 
 .navelements{
     display: flex;
     justify-content: space-between;
@@ -24,13 +32,14 @@ body{
     padding-top: 2%;
     padding-bottom: 2%;
     background-color: white;
-    border-bottom: 1px solid black;
+    max-width: 100vw;
 }
 .navelement:nth-child(1){
     margin-left: 5%;/* Adjust spacing between elements as needed */
 }
 .navelement{
     margin-left: 18px;
+    max-width: 100vw;
 }
 .navelements a{
     text-decoration: none;
@@ -64,13 +73,86 @@ body{
 }
 
 
-
-.hotels{
+.next{
+    background-color: white;
+    width: 100%;
+    height: 20px;
+}
+.landing-page{
     background-color:rgb(236, 233, 228);
     width: 100%;
-    height: 10px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+    background-image: url(pics/villa3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 4.5%;
 }
 
+.landing-span{
+    color: #fff;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: .05em;
+    line-height: 1.7;
+    text-transform: uppercase;
+}
+.landing-title{
+    font-family: Boowie;
+    font-size: 54px;
+    letter-spacing: .04em;
+    font-weight: 400;
+    line-height: 1.2;
+    color: #fff;
+}
+.landing-p{
+    font-size: 20px;
+    letter-spacing: .04em;
+    font-weight: 400;
+    line-height: 1.1;
+    color: #fff;
+}
+.seemore{
+    width: 125px;
+    height: 125px;
+    background-color: #fbe0a9;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    cursor: pointer;
+    transition: 0.4s ease;
+}
+.seemore:hover{
+    background-color: #ebb479;
+}
+.seemore:hover p {
+    color: #fff;
+}
+.seemore p{
+    color: #707070;
+    font-size: 1.05rem;
+    transition: 0.4s ease;
+}
+.seemore a{
+    text-decoration: none;
+    margin-bottom: -14%;
+}
+#arrow{
+    height: 45px;
+    fill: #707070;
+    transition: 0.4s ease;
+}
+.seemore:hover #arrow{
+    fill: #fff !important;
+}
 
 
 
@@ -79,6 +161,7 @@ body{
         display: none;
         padding-top: 0;
         padding-bottom: 0;
+        margin-right: 18px;
     }
     .menu-icon {
         display: flex;
@@ -101,7 +184,13 @@ body{
     .navbar{
         display: flex;
         align-items: center;
-        height: 55px;
+        height: 70px;
+        position: fixed;
+        left: 0; /* Aligns the navbar to the left of the viewport */
+        width: 100%; /* Ensures the navbar spans the full width of the viewport */
+        background-color: white; /* Optional: Adds a background color to ensure readability */
+        z-index: 1000; 
+        top: 0; /* Aligns the navbar to the top of the viewport */
     }
     #sidebar{
         display: flex;
@@ -129,5 +218,21 @@ body{
     }
     .sidebar a:hover{
         color:#ebb479;
+    }
+    .landing-span{
+        font-size: 14px;
+    }
+    .landing-title{
+        font-size: 50px;
+    }
+    .landing-p{
+        font-size: 18px;
+        letter-spacing: .04em;
+        font-weight: 400;
+        line-height: 1.1;
+        color: #fff;
+    }
+    .landing-page{
+        margin-top: 0%;
     }
 }
