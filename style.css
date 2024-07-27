@@ -192,17 +192,17 @@ body{
         z-index: 1000; 
         top: 0; /* Aligns the navbar to the top of the viewport */
     }
+
     #sidebar{
         display: flex;
-        flex-direction: column;
         align-items: center;
-        justify-content: space-around;
-        height: 100%; 
+        justify-content: center;
+        height: 100%;
         width: 100%;
         background-color: white; /* Background color for the sidebar */
         position: fixed; 
         transition: transform 0.3s ease, display 0s 0.3s; 
-        transform: translateX(-100%); /* Initially slide out of view */
+        transform: translateX(-100%);
     }
     #sidebar.show{
         display: flex;
@@ -219,6 +219,19 @@ body{
     .sidebar a:hover{
         color:#ebb479;
     }
+    .sidebar-items{
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        gap: 55px;
+        flex-direction: column;
+    }
+
+
+   
+    
+
+
     .landing-span{
         font-size: 14px;
     }
