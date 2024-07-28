@@ -264,7 +264,106 @@ body{
     color: #707070;
 }
 
+.villaimg1, .villaimg2{
+    height: 670px;
+}
+.villas{
+    background-color: #ece9e4;
+    padding-top: 10%;
+}
+.villa1{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.infocontainer1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -5%;
+}
 
+
+.villa2{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: -7%;
+}
+.villatitle1{
+    font-family: Boowie;
+    font-size: 54px;
+    letter-spacing: .04em;
+    font-weight: 400;
+    line-height: 1.2;
+    color: #ADB8A2;
+    text-transform: uppercase;
+}
+.villainfo1{
+    font-size: 1.1rem;
+    letter-spacing: .04em;
+    line-height: 1.5;
+    font-weight: 300;
+    color: #707070;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.villabtn{
+    padding: 15px 32px;
+    border: none;
+    border-radius: none;
+    cursor: pointer;
+    border-top: 1px solid #EBB479;
+    border-bottom: 1px solid #EBB479;
+    font-family: Poppins;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: .04em;
+    font-size: 16px;
+    line-height: 1.4;
+    color: #EBB479;
+    background: transparent;
+    transition: ease-in-out .3s all;
+    margin-top: 2%;
+}
+.villabtn:hover{
+    color: #fff;
+    background-color: #EBB479;
+}
+.feature img{
+    height: 40px;
+}
+.feature{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 6%;
+}
+
+.features1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 20px;
+}
+.feature span{
+    width: 140px;
+    color: #707070;
+    letter-spacing: .04em;
+    line-height: 1.5;
+    font-weight: 300;
+}
 
 
 
@@ -420,4 +519,70 @@ body{
         letter-spacing: .04em;
         line-height: 1.3;
     }
+    .feature span{
+        width: 97px;
+        color: #707070;
+        letter-spacing: .03em;
+        font-size: 0.9rem;
+    }
+    .feature{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 0px;
+        margin-bottom: 6%;
+    }
+    .features1{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        gap: 0px;
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .villainfo1{
+        font-size: 1rem;
+        margin-top: -5%;
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 6%;
+    }
+    .villaimg1, .villaimg2{
+        display: none;
+    }
+    .villa1, .villa2{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .phoneimg{
+        background-image: url(pics/Spetses__0084.jpg);
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+        height: 200px;
+        padding-top: 10%;
+    }
+    .villabtn{
+        margin-bottom: 45%;
+    }
+    .phoneimg2{
+        background-image: url(pics/Spetses__0077.jpg);
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+        height: 200px;
+        padding-top: 10%;
+    }
+    .villatitle1, .villatitle2{
+        font-size: 41px;
+    }
+    
+
 }
+
