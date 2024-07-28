@@ -89,6 +89,7 @@ body{
     text-align: center;
     gap: 15px;
     background-image: url(pics/villa3.jpg);
+    background-color: #ece9e4;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -226,6 +227,7 @@ body{
 .landing2{
     background-color: #ece9e4;
     padding-bottom: 5%;
+    margin-top: 0%;
 }
 
 
@@ -327,7 +329,8 @@ body{
         flex-direction: column; /* Adjust to space-between to align items to the left and right */
         width: 100%;
         text-align: center; 
-        margin-top: 10%;
+        margin-top: 0%;
+        padding-top: 15%;
     }
     .hero1 {
         display: flex;
