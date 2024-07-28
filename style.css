@@ -364,6 +364,86 @@ body{
     line-height: 1.5;
     font-weight: 300;
 }
+.villa2 .infocontainer1{
+    margin-top: 1%;
+
+}
+.slider-section{
+    background-color: #ece9e4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 8%;
+    padding-bottom: 5%;
+}
+.slidertitle{
+    margin-bottom: 8%;
+}
+.slidertitle p{
+    margin: 0 auto;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 300;
+    color: #707070;
+    letter-spacing: .04em;
+    line-height: 1.5;
+}
+.sliderimg{
+    width: 100%;
+}
+.mySlides{
+    display: none;
+}
+.slideshow-container{
+    position: relative;
+}
+.prev, .next{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: 21px; /* Set a fixed width */
+    height: 21px; /* Set a fixed height */
+    padding: 19px;
+    color: #fff;
+    background-color: #ADB8A2;
+    font-size: 1.3rem;
+    transition: 0.3s ease-in-out;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.prev {
+    left: 0;
+}
+.prev:hover{
+    background-color: #EBB479;
+}
+
+.next {
+    right: 0;
+}
+.next:hover{
+    background-color: #EBB479;
+}
+.numbertext{
+    color: #fff;
+    font-size: 1.08rem;
+    padding: 20px;
+    position: absolute;
+    top: 0;
+    border: 0.6px solid #fff;
+    border-radius: 50%;
+    margin: 10px;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center; 
+}
 
 
 
@@ -581,6 +661,37 @@ body{
     }
     .villatitle1, .villatitle2{
         font-size: 41px;
+    }
+    .landing-page{
+        background-image: url(pics/villa3.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .numbertext{
+        color: #fff;
+        font-size: 0.7rem;
+        padding: 10px;
+        top: 0;
+        border: 0.6px solid #fff;
+        border-radius: 50%;
+        margin: 10px;
+        width: 25px;
+        height: 25px;
+    }
+    .prev, .next{
+        top: 50%;
+        width: 10px; /* Set a fixed width */
+        height: 15px; /* Set a fixed height */
+        padding: 10px;
+        font-size: 1.2rem;
+        background-color: transparent;
+    }
+    .slidertitle p{
+        font-size: 1.05rem;
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
     }
     
 
