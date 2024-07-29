@@ -368,18 +368,20 @@ body{
     margin-top: 1%;
 
 }
+
 .slider-section{
-    background-color: #ece9e4;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     gap: 20px;
     padding-top: 8%;
-    padding-bottom: 5%;
+    padding-bottom: 0 !important;
+    background-color: #ece9e4;
+    box-sizing: border-box;
 }
 .slidertitle{
-    margin-bottom: 8%;
+    padding-bottom: 6%;
 }
 .slidertitle p{
     margin: 0 auto;
@@ -392,6 +394,7 @@ body{
 }
 .sliderimg{
     width: 100%;
+    padding: 0;
 }
 .mySlides{
     display: none;
@@ -399,6 +402,7 @@ body{
 .slideshow-container{
     position: relative;
 }
+
 .prev, .next{
     cursor: pointer;
     position: absolute;
@@ -415,6 +419,10 @@ body{
     align-items: center;
     justify-content: center;
 }
+
+
+
+
 .prev {
     left: 0;
 }
@@ -443,6 +451,87 @@ body{
     align-items: center;
     justify-content: center;
     text-align: center; 
+}
+
+.whyus{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    background-color: #ece9e4;
+    margin-top: 0;
+}
+.whycontainer1, .whycontainer1 h2, .whycontainer1 .whyp {
+    text-align: left;
+    margin-left: 3%;
+}
+.whycontainer1 h2{
+    font-family: Boowie;
+    font-size: 54px;
+    letter-spacing: .04em;
+    font-weight: 400;
+    line-height: 1.2;
+    color: #ADB8A2;
+    margin-bottom: 0;
+}
+.whyp{
+    font-size: 19px;
+    letter-spacing: .04em;
+    line-height: 1.5;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: #707070;
+    margin-top: 0;
+}
+.whycontainer1 {
+    display: flex;
+    align-items: flex-start; /* Align items to the start */
+    justify-content: flex-start; /* Align content to the start */
+    flex-direction: column;
+    width: 100%;
+}
+.whycontainer2{
+    display: flex;
+    align-items: flex-start;  
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    gap: 50px;
+}
+.whyinfo{
+    padding-top: 3%;
+    display: flex;
+    flex-direction: row;              /* Use Flexbox to layout children */
+    align-items: flex-start;     /* Align children at the start of the container */
+    margin-bottom: 20px;  
+}
+.whyinfo h5{
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    letter-spacing: .05em;
+    text-transform: uppercase;
+    color: #707070;
+}
+.whyinfo p{
+    font-size: 1.06rem;
+    color: #707070;
+    font-weight: 300;
+    letter-spacing: .05em;
+}
+.whyimg{
+    width: 40px;
+    height: auto;
+}
+.whyicon {
+    display: flex;
+    align-items: center;             /* Center the image vertically within the .whyicon container */
+    margin-right: 20px; 
+    margin-top: 23px;             /* Space between icon and text */
+}
+.infowhy {
+    flex: 1;                         /* Allow text container to take the remaining space */
 }
 
 
@@ -713,6 +802,71 @@ body{
         width: 95%;
         margin-left: auto;
         margin-right: auto;
+    }
+    .whycontainer2{
+        display: flex;
+        align-items: flex-start;  
+        justify-content: center;
+        flex-direction: column;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        height: auto;
+        gap: 0px;
+        margin-top: 0%;
+    }
+    .whyinfo{
+        padding-top: 3%;
+        display: flex;
+        flex-direction: column;              /* Use Flexbox to layout children */
+        align-items: flex-start;     /* Align children at the start of the container */
+        margin-bottom: 5px;  
+    }
+
+    .whyinfo h5{
+        font-size: 1rem;
+        margin-bottom: 10px;
+    }
+    .whyinfo p{
+        font-size: 0.9rem;
+    }
+    .whyimg{
+        width: 35px;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+    .whyicon {
+        display: flex;
+        align-items: center;             /* Center the image vertically within the .whyicon container */
+        margin-right: 20px; 
+        margin-top: 23px;             /* Space between icon and text */
+    }
+
+    .whycontainer1 h2{
+        font-size: 45px;
+        text-align: left !important;
+        margin-bottom: 3%;
+    }
+    .whyp{
+        font-size: 1rem;
+        margin-top: 0;
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .whycontainer1 {
+        display: flex;
+        align-items: flex-start; /* Align items to the start */
+        justify-content: center; /* Align content to the start */
+        flex-direction: column;
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: left;
+    }
+    .whyus{
+        margin-top: -15%;
+        padding-top: 0;
     }
 
     
