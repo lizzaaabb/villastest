@@ -483,6 +483,27 @@ body{
         z-index: 1000; 
         top: 0; /* Aligns the navbar to the top of the viewport */
     }
+    .slideshow-container {
+        position: relative; /* Ensure it's relative to its container */
+        transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth transitions */
+        z-index: 1; /* Ensure it's behind the sidebar */
+    }
+
+    .slideshow-container.slide-out {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+
+    .slideshow-container.slide-in {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    .slideshow-container.hidden {
+        display: none; /* Hide the slideshow container when it has the 'hidden' class */
+    }
+    .slider-section{
+        z-index: 1;
+    }
 
     #sidebar{
         display: flex;
@@ -693,6 +714,7 @@ body{
         margin-left: auto;
         margin-right: auto;
     }
+
     
 
 }
