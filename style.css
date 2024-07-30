@@ -662,6 +662,166 @@ body{
 }
 
 
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-top: 15%;
+}
+.footercontainer2{
+    height: 560px;
+    width: 810px;
+    background-color: #bfceb1;
+
+}
+.footercontainer1{
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+    text-align: center; 
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+}
+.footerheader h3{
+    font-family: Boowie;
+    font-size: 54px;
+    color: #ADB8A2;
+    letter-spacing: .04em;
+    font-weight: 400;
+    line-height: 1.2;
+}
+.footerheader{
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+.footertext{
+    margin-top: -15%;
+    padding-top: 0;
+}
+.footertext p{
+    font-size: 1rem;
+    color: #707070;
+    font-weight: 300;
+    letter-spacing: .05em;
+}
+.footertext p:nth-child(1){
+    font-weight: 500;
+}
+.footerbtn{
+    padding: 15px 32px;
+    border: none;
+    border-radius: none;
+    cursor: pointer;
+    border-top: 1px solid #EBB479;
+    border-bottom: 1px solid #EBB479;
+    font-family: Poppins;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: .04em;
+    font-size: 16px;
+    line-height: 1.4;
+    color: #EBB479;
+    background: transparent;
+    transition: ease-in-out .3s all;
+
+}
+.footerbutton{
+    margin-top: 5%;
+}
+.footerbtn:hover{
+    color: #fff;
+    background-color: #EBB479;
+}
+.gmailicon{
+    height: 50px;
+    cursor: pointer;
+}
+.fbicon{
+    height: 50px;
+    cursor: pointer;
+}
+
+.footercontainer2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.footerinfo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 10%;
+    gap: 230px;
+
+}
+.gmail p{
+    font-size: 22px;
+    font-weight: 300;
+    letter-spacing: .04em;
+    line-height: 1.3;
+    color: #707070;
+    transition: 0.3s ease;
+    cursor: pointer;
+    margin-top: 30px;
+}
+.address p:nth-child(1){
+    font-size: 22px;
+    font-weight: 300;
+    letter-spacing: .04em;
+    line-height: 1.3;
+    color: #707070;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+.address p:nth-child(1):hover{
+    color: #fff;
+}
+.address p:nth-child(2){
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: .03em;
+    line-height: 1.3;
+    color: #fff;
+    transition: 0.3s ease;
+    cursor: pointer;
+    margin-top: -9px;
+}
+.address p:nth-child(2):hover{
+    text-decoration: underline;
+}
+.address{
+    margin-top: 45px;
+    margin-bottom: 45px;
+}
+.gmail p:hover{
+    color: #fff;
+}
+.inforight p{
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: .03em;
+    line-height: 1.8;
+    color: #fff;
+    transition: 0.3s ease;
+    cursor: pointer;
+    margin-top: -9px;
+}
+.footerbottom{
+    font-weight: 300;
+    font-size: 15px;
+    color: #707070;
+    opacity: 0.8;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+.footerbottom:hover{
+    color: #fff;
+}
 
 
 @media (max-width: 430px) {
@@ -1075,6 +1235,67 @@ body{
         padding: 12px 28px;
         font-size: 14px;
     }
+    footer{
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 15%;
+    }
+    .footercontainer2{
+        height: auto;
+        width: 100%;    
+    }
+    .footercontainer1{
+        width: 90%;
+        margin-bottom: 10%;
+    }
+    .footercontainer2 {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start; /* Align items to the left */
+        padding: 20px; /* Optional: add padding for spacing */
+    }
+    
+    .footerinfo {
+        display: flex;
+        flex-direction: column; /* Ensure vertical stacking */
+        align-items: flex-start; /* Align content to the left */
+        text-align: left; /* Align text to the left */
+        margin-top: 10%;
+        gap: 0px; /* Space between child elements */
+        margin-left: 4%;
+    }
+    
+    .infoleft,
+    .inforight {
+        width: 100%; /* Ensure full width for left alignment */
+    }
+    .footerheader h3{
+        font-size: 35px;
+        margin-bottom: 8%;
+    }
+    .footertext{
+        margin-top: 0%;
+    }
+    .footertext p{
+        font-size: 0.95rem;
+    }
+    .footerbtn{
+        padding: 12px 28px;
+        font-size: 14px;
+    
+    }
+    .infoleft{
+        display: none;
+    }
+    .gmail p{
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 0.9rem;
+        margin-top: 5%;
+    }
+    
+    
 
     
 
